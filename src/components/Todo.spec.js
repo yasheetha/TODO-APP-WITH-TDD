@@ -41,7 +41,7 @@ describe("edit mode",()=>{
 });
 
 describe("functionality",()=>{
-    it("should return back viewing where we can edit and delete the tasks(cancel button)",()=>{
+    it("should return back to viewing template where we can edit and delete the tasks(cancel button)",()=>{
         const { getByTestId } = render(<Todo />);
         fireEvent.click(getByTestId("edit-button"));
         fireEvent.click(getByTestId("cancel-button"));

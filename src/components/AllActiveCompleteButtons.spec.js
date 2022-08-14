@@ -3,7 +3,7 @@ import React from "react";
 import Buttons from "./AllActiveCompleteButtons";
 import '@testing-library/jest-dom/extend-expect'
 
-describe("should",()=>{
+describe("rendering of filter",()=>{
     it("filters should be of type buttons ",()=>{
         const { getByTestId } = render(<Buttons />);
         expect(getByTestId("buttons")).toHaveAttribute("type","button");

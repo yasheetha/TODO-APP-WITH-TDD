@@ -1,4 +1,4 @@
-describe("should",()=>{
+describe("functionality of input form",()=>{
     it("should empty the text field after clicking add button",()=>{
         cy.visit('http://localhost:3000');
         cy.get('[data-testid="input-form"]').type('draw');

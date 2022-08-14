@@ -3,7 +3,7 @@ import { render } from "@testing-library/react";
 import App from "./App";
 import '@testing-library/jest-dom/extend-expect'
 
-describe("should ",()=>{
+describe("rendering ",()=>{
     it("should display the heading of the app",()=>{
         const { getByTestId } = render(<App />);
         expect(getByTestId("heading")).toBeInTheDocument;
